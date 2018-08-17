@@ -1,0 +1,119 @@
+#admin-container {
+  width: 90%;
+  /* background: yellow; */
+  box-sizing: border-box;
+  margin-top: 5%;
+  margin-bottom: 15%;
+}
+#admin_panel {
+  margin-left: auto;
+  margin-right: auto;
+  /* overflow: auto; */
+
+  /* border: 1px groove rgb(243, 138, 0); */
+  background: rgb(255, 245, 231);
+  border-radius: 25px;
+  font-weight: 700;
+}
+
+#btnGroup {
+  overflow: auto;
+}
+#myAds {
+  float: left;
+  margin-right: 5px;
+  font-weight: 700;
+  padding: 1em;
+  text-transform: uppercase;
+  border-right: 1px solid black;
+}
+#myChats {
+  float: left;
+  font-weight: 700;
+  padding: 1em;
+  text-transform: uppercase;
+  border-right: 1px solid black;
+}
+#mySavedAds {
+  float: left;
+  font-weight: 700;
+  padding: 1em;
+  text-transform: uppercase;
+  border-right: 1px solid black;
+}
+#btnGroup:hover {
+  background: rebeccapurple;
+  border-radius: 25px;
+  color: white !important;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+/* LIST VIEW */
+
+#responseArea {
+  display: none;
+  height: auto;
+  width: 100%;
+  padding: 3%;
+  background: rgb(255, 255, 255);
+}
+#responseAreaChats {
+  display: none;
+  height: auto;
+  width: 100%;
+  padding: 3%;
+  background: rgb(255, 255, 255);
+}
+#savedAds {
+  display: none;
+  height: auto;
+  width: 100%;
+  padding: 3%;
+  background: rgb(255, 255, 255);
+}
+.container {
+  margin-bottom: 25px;
+}
+#img {
+  float: left;
+  width: 20%;
+}
+.list-left {
+  float: left;
+  margin-left: 15px;
+  /* background: red; */
+  padding-top: 1%;
+  padding-left: 1%;
+  width: 70%;
+}
+.title {
+  font-size: 2em;
+}
+.Desc {
+  font-size: 1.2em;
+}
+.adprice {
+  font-size: 3em;
+  float: right;
+}
+
+/* Responsive */
+
+@media screen and (max-width: 1400px) and (min-width: 1121px) {
+}
+
+@media screen and (max-width: 1120px) and (min-width: 992px) {
+}
+
+@media screen and (max-width: 991px) and (min-width: 800px) {
+}
+
+@media screen and (max-width: 799px) and (min-width: 780px) {
+}
+
+@media screen and (max-width: 779px) and (min-width: 420px) {
+}
+
+@media screen and (max-width: 419px) {
+}

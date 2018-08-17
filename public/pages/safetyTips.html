@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Safety Tips | OLX</title>
+  <link rel="shortcut icon" href="/images/icons/icon-152x152.png" type="image/x-icon">
+
+  <!-- FONTS LINKS-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <!-- JS LINKS -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+
+
+
+  <!-- CSS LINKS -->
+  <link rel="stylesheet" href="../style.css">
+  <link rel="stylesheet" href="/css/safety.css">
+  <link rel="stylesheet" href="../css/bootstrap-grid.min.css">
+  <link rel="stylesheet" href="../css/bootstrap.min.4.css">
+  <link rel="stylesheet" href="../css/bootstrap.min.3.css">
+
+  <link rel="stylesheet" type="text/css" href="https://olxpkstatic-a.akamaihd.net/4f36187-964/packed/sw2c17de06c38b03c5876a39ef5c6b6eb1.css">
+  <link rel="stylesheet" type="text/css" href="https://olxpkstatic-a.akamaihd.net/4f36187-964/packed/sw95cce07e46748a81856686f8f905344d.css">
+
+
+</head>
+
+  <body>
+    <!-- Header Start -->
+      <!-- Top Row -->
+
+  <ul class="nav justify-content-end" name="header-top" id="top-row">
+    <!-- <input type="button" class="btn btn-danger" id="signOutBtn" value="Sign Out"> -->
+
+    
+
+    <!-- <a class="nav-link" id="MyAdsDash" href="dashboard.html">Dashboard</a> -->
+    <div class="dropdown" id="dropDown_div">
+                    <button class="dropbtn" id="MyAccPlace">My Account</button>
+        <div class="dropdown-content">
+          <a href="dashboard.html" >Account</a>
+          <a href="javascript:void(0)" id="signOutBtn">SignOut</a>
+        </div>
+      </div>
+
+      
+    <a class="nav-link" href="  ../pages/construction.html">Get the app</a>
+    <a class="nav-link" href="submitAd.html">Sell on OLX</a>
+
+
+    <a class="nav-link" id="loginNav_Btn" href="login.html">login</a>
+    <a class="nav-link" id="SignupNav_Btn" href="signup.html">signup</a>
+</ul>
+
+
+      <!-- middle Row -->
+      <span  style="position: absolute; top: 25px;" id="nav_openBtn" onclick="openNav()">☰</span>
+
+      <div class="row justify-content" name="header-main" id="mid-row">
+
+          <a class="adSubmission" href="/index.html">
+              <img src="../images/main-logo.svg" alt="LOGO" id="main-logo">
+          </a>
+  
+          <!-- SEARCH BAR -->
+  
+          <input type="search" id="search" placeholder="Search For Products...">
+          <select id="SearchByCategory">
+              <option value="0">All Categories</option>
+              <option value="1">Mobiles</option>
+              <option value="2">Electronics and Appliances</option>
+              <option value="3">Cars</option>
+              <option value="4">Bikes</option>
+              <option value="5">Furniture</option>
+              <option value="6">Pets</option>
+              <option value="7">Books, Sports and hobbies</option>
+              <option value="8">Fashion</option>
+              <option value="9">Kids</option>
+              <option value="10">Services</option>
+              <option value="11">Jobs</option>
+              <option value="12">Real-Estate</option>
+          </select>
+  
+  
+          <button type="button" class="btn" id="searchBtn">
+              <span class="fa fa-search" style="color: white;"></span>
+          </button>
+ 
+      </div>
+  
+      <!-- Last row -->
+      <div class="nav justify-content-center" name="header-nav" id="header-bottom">
+  
+          <a class="nav-link" href="/pages/mobiles.html">
+              <li>Mobiles</li>
+          </a>
+          <a class="nav-link" href="/pages/elctrnicApplince.html">
+              <li>Electronics & Appliances</li>
+          </a>
+          <a class="nav-link" href="/pages/cars.html">
+              <li>Cars</li>
+          </a>
+          <a class="nav-link" href="/pages/bikes.html">
+              <li>Bikes</li>
+          </a>
+          <a class="nav-link" href="/pages/furniture.html">
+              <li>Furnitures</li>
+          </a>
+          <a class="nav-link" href="/pages/pets.html">
+              <li>Pets</li>
+          </a>
+          <a class="nav-link" href="/pages/sportsTravel.html">
+              <li>Sports & Hobbies</li>
+          </a>
+          <a class="nav-link" href="/pages/Fashion.html">
+              <li>Fashion</li>
+          </a>
+          <a class="nav-link" href="/pages/baby&toys.html">
+              <li>Baby & Toys</li>
+          </a>
+          <a class="nav-link" href="/pages/services.html">
+              <li>Services</li>
+          </a>
+          <a class="nav-link" href="/pages/jobs.html">
+              <li>Jobs</li>
+          </a>
+          <a class="nav-link" href="/pages/estate.html">
+              <li>Real-Estate</li>
+          </a>
+          
+  
+      </div>
+
+
+   <!-- Last row Repsonsive-->
+   <div id="mySidenav" class="sidenav">
+      <a class="nav-link" id="submitAdButton" href="/pages/submitAd.html">Post A Free Ad</a>
+      <div>
+          <a class="nav-link" id="loginButton" href="/pages/login.html">Login</a>
+          <a class="nav-link" id="signUpbutton" href="/pages/signup.html">Sign Up</a>
+      </div>
+      <a class="nav-link" id="dashBoardButton" href="/pages/dashboard.html">My Account</a>
+
+
+
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <a class="nav-link" href="/pages/mobiles.html">Mobiles</a>
+      <a class="nav-link" href="/pages/elctrnicApplince.html">Electronics & Appliances</a>
+      <a class="nav-link" href="/pages/cars.html">Cars</a>
+      <a class="nav-link" href="/pages/bikes.html">Bikes</a>
+      <a class="nav-link" href="/pages/furniture.html">Furnitures</a>
+      <a class="nav-link" href="/pages/pets.html">Pets</a>
+      <a class="nav-link" href="/pages/sportsTravel.html">Sports & Hobbies</a>
+      <a class="nav-link" href="/pages/Fashion.html">Fashion</a>
+      <a class="nav-link" href="/pages/baby&toys.html">Baby & Toys</a>
+      <a class="nav-link" href="/pages/services.html">Services</a>
+      <a class="nav-link" href="/pages/jobs.html">Jobs</a>
+      <a class="nav-link" href="/pages/estate.html">Real-Estate</a>
+      <br>
+      <a class="nav-link" id="signoutButton" href=`jvascript:void(0)`>Sign Out</a>
+  </div>
+
+
+  <ul class="breadcrumb">
+    <li>
+      <a class="adSubmission" href="/index.html">Home</a>
+    </li>
+    <li>
+      <a href="#">Safety Tips</a>
+    </li>
+  </ul>
+
+  
+
+
+
+
+  <!-- Body Start -->
+  <section id="body-container">
+      <div class="wrapper">
+        <div class="content">
+          <h2>Safety Tips</h2>
+          <p class="intro x-large lheight24 tcenter">There is no definite way to identify a fraudulent seller or buyer.<br> We urge you to practice good judgement and keep the following tips in mind:</p>
+          <ul>
+            <li class="box right rel eq1">
+              <div class="inner">
+                <div class="rel">
+                  <div class="icon headline abs"></div>
+                  <h3>How to sell safely?</h3>
+                </div>
+                <ul>
+                  <li>Try to take the full payment at the time of the delivery. Remember to use a safe location to meet.</li>
+                  <li>Watch out for fake currency and money orders. Be aware that banks will not honour fake currency/money order and will hold you responsible for it.</li>
+                  <li>Verify the buyer’s credentials if there is a request for a bulk order. Ask the buyer to provide photo ID and proof of address.</li>
+                  <li>Ensure that your product meets the features you list in your ad to avoid any misunderstanding with the buyer.</li>
+                  <li>Do not share your financial information except the one required for payment.</li>
+                </ul>
+              </div>
+              <div class="glow abs"></div>
+              <div class="ilu abs"></div>
+              <div class="line abs"></div>
+              <div class="top abs"></div>
+              <div class="middle abs"></div>
+              <div class="bottom abs"></div>
+            </li>
+            <li class="box left rel eq2">
+              <div class="inner">
+                <div class="rel">
+                  <div class="icon headline abs"></div>
+                  <h3>How to buy safely?</h3>
+                </div>
+                <ul>
+                  <li>Always meet the seller at a safe location and inspect the item before purchasing. Following this one rule will help you avoid most scams. This is also true for house rentals.</li>
+                  <li>Watch out for unrealistic offers. If it appears too good to be true, it probably is. Unrealistic offers are used to motivate purchasers to make hasty decisions.</li>
+                  <li>The best way to transact is to collect the item and pay at the same time. Never transfer funds or use a debit card to pay someone you do not know before collecting an item.</li>
+                  <li>Ask for clear information on condition of the item, price, payment and delivery method.</li>
+                  <li>Use only those payment methods that you trust and are familiar with. Never give out your financial information.</li>
+                  <li>It is recommended to purchase items directly from the seller.</li>
+                  <li>In case of electronic goods, cars, and bikes you should test the functioning of the item before purchase. Verify vehicle chassis number. 3rd party services are available that can provide the history of a vehicle for theft, damage, and for identification purposes.</li>
+                  <li>Do your research on comparative prices for the product.</li>
+                </ul>
+              </div>
+              <div class="glow abs"></div>
+              <div class="ilu abs"></div>
+              <div class="line abs"></div>
+              <div class="top abs"></div>
+              <div class="middle abs"></div>
+              <div class="bottom abs"></div>
+            </li>
+            <li class="box right rel eq3">
+              <div class="inner">
+                <div class="rel">
+                  <div class="icon headline abs"></div>
+                  <h3>How to take care about the safety of your account OLX.com.pk?</h3>
+                </div>
+                <p>Never reveal your login and password of your account. Think of a <strong>difficult password</strong>, consisting of minimum 6 characters, including at least one digit. For safety reasons we do not recommend storing the password in the browser. If you feel that someone knows your password - change to a new one.</p>
+              </div>
+              <div class="glow abs"></div>
+              <div class="ilu abs"></div>
+              <div class="line abs"></div>
+              <div class="top abs"></div>
+              <div class="top abs"></div>
+              <div class="middle abs"></div>
+              <div class="bottom abs"></div>
+            </li>
+            <li class="box left rel eq4">
+              <div class="inner">
+                <div class="rel">
+                  <div class="icon headline abs"></div>
+                  <h3>How to take special care?</h3>
+                </div>
+                <p>
+                  Be <strong>careful</strong> if the price of the product is clearly <strong>undervalued</strong>. Pay special attention if the seller avoids personal collection of the product with respect to your request on the site or send COD. Be careful when you are entering into a transaction with the user whose account was found <strong>recently</strong> on the OLX site or when it is written in a way that seems like a template or automatically translated. In the case of ads from "Free" category do not transfer money before shipment.						</p>
+              </div>
+              <div class="glow abs"></div>
+              <div class="ilu abs"></div>
+              <div class="line abs"></div>
+              <div class="top abs"></div>
+              <div class="middle abs"></div>
+              <div class="bottom abs"></div>
+            </li>
+            <li class="box right rel eq5">
+              <div class="inner">
+                <div class="rel">
+                  <div class="icon headline abs"></div>
+                  <h3>What should I do if I suspect someone to be fraudulent buyer or seller?</h3>
+                </div>
+                <p>
+                  Please <a href="https://www.olx.com.pk/contact/" class="link"><span>contact us</span></a>, at Legal Issues if you suspect someone to be acting fraudulently on OLX. We also urge you to notify the Police immediately if you have been a victim of fraud.						</p>
+              </div>
+              <div class="glow abs"></div>
+              <div class="ilu abs"></div>
+              <div class="line abs"></div>
+              <div class="top abs"></div>
+              <div class="middle abs"></div>
+              <div class="bottom abs"></div>
+            </li>
+          </ul>
+          <div class="bottomilu"></div>
+        </div>
+      </div>
+    </section>   
+    
+
+
+
+  <!-- Footer Start -->
+
+  <!-- The content of your page would go here. -->
+
+  <footer class="footer-distributed">
+
+      <div class="footer-left">
+  
+        <img src="../images/main-logo.svg" id="footer_logo">
+  
+        <p class="footer-links">
+          <a href="../index.html">Home</a>
+          ·
+          <a href="../pages/login.html">login</a>
+          ·
+          <a href="../pages/signup.html">Signup</a>
+          ·
+          <a href="../pages/construction.html">About</a>
+          ·
+          <a href="../pages/construction.html">Faq</a>
+          ·
+          <a href="../pages/construction.html">Contact</a>
+        </p>
+  
+        <p class="footer-company-name">Company Name &copy; 2015</p>
+      </div>
+  
+      <div class="footer-center">
+  
+        <div>
+          <i class="fa fa-map-marker"></i>
+          <p>
+            <span>B#22 Gulshan Street</span> Karachi, Pakistan</p>
+        </div>
+  
+        <div>
+          <i class="fa fa-phone"></i>
+          <p>+92 315 2289011</p>
+        </div>
+  
+        <div>
+          <i class="fa fa-envelope"></i>
+          <p>
+            <a href="mailto:support@company.com">support@company.com</a>
+          </p>
+        </div>
+  
+      </div>
+  
+      <div class="footer-right">
+  
+        <p class="footer-company-about">
+          <span>About the company</span>
+          Lorem ipsum dolor sit amet, consectateur adispicing elit. Fusce euismod convallis velit, eu auctor lacus vehicula sit amet.
+        </p>
+  
+        <div class="footer-icons">
+  
+          <a href="https://www.facebook.com/smartyboy5?ref=bookmarks" target="_blank">
+            <span class="fa fa-facebook-square"></span>
+          </a>
+          <a href="https://github.com/mildk123" target="_blank">
+            <span class="fa fa-github"></span>
+          </a>
+          <a href="#">
+            <span class="fa fa-linkedin" target="_blank"></span>
+          </a>
+          <a href="https://www.instagram.com/_khan.0" target="_blank">
+            <span class="fa fa-instagram"></span>
+          </a>
+  
+        </div>
+  
+      </div>
+  
+    </footer>
+  
+  
+  
+  
+
+  
+  
+    <script src="https://www.gstatic.com/firebasejs/5.2.0/firebase.js"></script>
+    <script>
+      // Initialize Firebase
+      var config = {
+        apiKey: "AIzaSyDY7EfIaHDJU19yfNTC1KwyhMhL0z5dlJc",
+        authDomain: "olx-app111.firebaseapp.com",
+        databaseURL: "https://olx-app111.firebaseio.com",
+        projectId: "olx-app111",
+        storageBucket: "olx-app111.appspot.com",
+        messagingSenderId: "286691312002"
+      };
+      firebase.initializeApp(config);
+    </script>
+    <script src="../script.js"></script>
+    <script src="/scripts/navigation.js"></script>
+  </body>
+  
+  </html>

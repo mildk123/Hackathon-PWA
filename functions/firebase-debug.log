@@ -1,0 +1,41 @@
+[debug] [2018-07-14T11:33:33.244Z] ----------------------------------------------------------------------
+[debug] [2018-07-14T11:33:33.247Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Joint\AppData\Roaming\npm\node_modules\firebase-tools\bin\firebase serve
+[debug] [2018-07-14T11:33:33.248Z] CLI Version:   3.19.3
+[debug] [2018-07-14T11:33:33.248Z] Platform:      win32
+[debug] [2018-07-14T11:33:33.248Z] Node Version:  v9.8.0
+[debug] [2018-07-14T11:33:33.249Z] Time:          Sat Jul 14 2018 16:33:33 GMT+0500 (Pakistan Standard Time)
+[debug] [2018-07-14T11:33:33.249Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2018-07-14T11:33:33.265Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2018-07-14T11:33:33.266Z] > authorizing via signed-in user
+[debug] [2018-07-14T11:33:33.269Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects/olx-app111  
+  
+ Sat Jul 14 2018 16:33:33 GMT+0500 (Pakistan Standard Time)
+[debug] [2018-07-14T11:33:34.587Z] <<< HTTP RESPONSE 200
+[debug] [2018-07-14T11:33:34.588Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/database/olx-app111/tokens  
+  
+ Sat Jul 14 2018 16:33:34 GMT+0500 (Pakistan Standard Time)
+[debug] [2018-07-14T11:33:35.474Z] <<< HTTP RESPONSE 200
+[debug] [2018-07-14T11:33:35.476Z] >>> HTTP REQUEST GET https://cloudresourcemanager.googleapis.com/v1/projects/olx-app111  
+  
+ Sat Jul 14 2018 16:33:35 GMT+0500 (Pakistan Standard Time)
+[debug] [2018-07-14T11:33:37.385Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Serving from 'C:\Users\Joint\Desktop\Hackaton'...
+[info] 
+[info] i  functions: Preparing to emulate functions.
+[debug] [2018-07-14T11:33:44.972Z] Fetching environment
+[debug] [2018-07-14T11:33:44.976Z] >>> HTTP REQUEST GET https://mobilesdk-pa.googleapis.com/v1/projects/286691312002:getServerAppConfig  
+  
+ Sat Jul 14 2018 16:33:44 GMT+0500 (Pakistan Standard Time)
+[debug] [2018-07-14T11:33:44.977Z] >>> HTTP REQUEST GET https://mobilesdk-pa.googleapis.com/v1/projects/286691312002/clients/_:getWebAppConfig  
+  
+ Sat Jul 14 2018 16:33:44 GMT+0500 (Pakistan Standard Time)
+[debug] [2018-07-14T11:33:46.885Z] <<< HTTP RESPONSE 200
+[info] i  hosting: Serving hosting files from: public
+[info] +  hosting: Local server: http://localhost:5000
+
+[debug] [2018-07-14T11:33:46.993Z] <<< HTTP RESPONSE 200
+[debug] [2018-07-14T11:33:46.994Z] Starting @google-cloud/functions-emulator
+[debug] [2018-07-14T11:33:52.137Z] Parsing function triggers
+[info] i  functions: No HTTPS functions found. Use firebase functions:shell if you would like to emulate other types of functions.

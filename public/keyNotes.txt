@@ -1,0 +1,31 @@
+
+
+-- delete saved ads
+-- delete my ads
+---------------------------------------------------------------------
+when same fetch button is pressed twice the data should overwrite previous data
+example.innerHTML = ""; (to Clear DATA FIRST BEFore retrieviing data)
+Save ads And Favourites (Using REST API)
+location
+install a service worker
+sign in in responsive design
+center Images on AD
+A chats Panel for buyer
+dashboard responsive
+chat responsive
+
+
+
+
+
+-- some UI CHANGES
+-- submit ad responsive
+-- safety responsive
+-- images slider on front page
+(1-2-5-6)
+
+=== ======= ========== ================================= ============= ========= =======
+                       FIX LOCALSTORAGE BUGS AND CONFUSION
++++ +++++++ ++++++++++ +++++++++++++++++++++++++++++++++ +++++++++++++ +++++++++ ++++++++
+
+

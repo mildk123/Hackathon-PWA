@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SignUp form</title>
+
+  <!-- CSS LINKS -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css">
+  <link rel="stylesheet" href="../css/signup.css">
+
+  <!-- Jquery -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+
+  <link rel="shortcut icon" href="/images/icons/icon-152x152.png" type="image/x-icon">
+
+  
+    <!-- Sweet Alert -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/1.1.3/sweetalert-dev.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    
+
+
+
+</head>
+
+<body>
+
+
+  <div class="login">
+    <h1>SignUp</h1>
+
+    <form class="form" method="post" action="#">
+      <p class="field">
+        <input type="text" id="fname" placeholder="First Name" required/>
+      </p>
+      <p class="field">
+        <input type="text" id="lname" placeholder="Last Name" required/>
+      </p>
+      <p class="field">
+        <input type="text" id="username" placeholder="Username" required/>
+      </p>
+
+      <p class="field">
+        <input type="email" id="email" placeholder="Email" required/>
+      </p>
+      <p class="field">
+        <input type="password" id="password" placeholder="Password" required/>
+      </p>
+      <p class="field">
+        <input type="password" id="cPassword" placeholder="Confirm Password" required/>
+      </p>
+      <p class="submit">
+        <input type="button" id="signUpBtn" value="SignUp">
+      </p>
+    </form>
+
+    <div id="controlBtns">
+      <a href="../index.html">
+        <button id="homeBtn">To Home Page</button>
+      </a>
+      <a href="login.html">
+        <button id="loginButn">To login Page</button>
+      </a>
+    </div>
+
+  </div>
+
+  <div id="errorBox">
+    <span></span>
+  </div>
+
+
+
+
+  <script src="https://www.gstatic.com/firebasejs/5.2.0/firebase.js"></script>
+  <script>
+    // Initialize Firebase
+    var config = {
+      apiKey: "AIzaSyDY7EfIaHDJU19yfNTC1KwyhMhL0z5dlJc",
+      authDomain: "olx-app111.firebaseapp.com",
+      databaseURL: "https://olx-app111.firebaseio.com",
+      projectId: "olx-app111",
+      storageBucket: "olx-app111.appspot.com",
+      messagingSenderId: "286691312002"
+    };
+    firebase.initializeApp(config);
+  </script>
+  <script src="../script.js"></script>
+</body>
+
+</html>
